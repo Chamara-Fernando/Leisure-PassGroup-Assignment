@@ -10,30 +10,39 @@ import java.io.IOException;
 
 public class PlanATripPage extends DriverFactory {
 
-    public @FindBy(xpath = "//*[@id=\"block-secondarylinks\"]/div/div/div/div/div/ul/li[4]/a") WebElement link_planATrip;
-
-    public PlanATripPage() {
-
-    }
-
-
     @Test
     public PlanATripPage goToGoCityBoston() throws IOException, InterruptedException {
 
         getDriver().get("https://gocity.com/boston/en-us/products/all-inclusive");
-        Thread.sleep(3000);
-       // link_planATrip.click();
         driver.findElement(By.xpath("//*[@id=\"block-secondarylinks\"]/div/div/div/div/div/ul/li[4]/a")).click();
+        Thread.sleep(3000);
+        return new PlanATripPage();
+    }
+
+    @Test
+    public PlanATripPage enterPersonalDetails() throws InterruptedException {
         driver.findElement(By.id("edit-first-name")).sendKeys("Chamara");
         driver.findElement(By.id("edit-last-name")).sendKeys("Fernando");
         driver.findElement(By.id("edit-email")).sendKeys("Fernando@gm.com");
         driver.findElement(By.id("edit-travel-date")).click();
         driver.findElement(By.xpath("//*[@id=\"ui-datepicker-div\"]/table/tbody/tr[5]/td[5]/a")).click();
+        Thread.sleep(3000);
+        return new PlanATripPage();
+    }
+
+    @Test
+    public PlanATripPage clickingOnPrivacyPolicy()  {
+
         driver.findElement(By.id("edit-subscription")).click();
+        return new PlanATripPage();
+
+    }
+
+    @Test
+    public PlanATripPage clickOnSubmitButton() throws InterruptedException {
         driver.findElement(By.id("edit-actions-submit")).click();
-
-
-
+        Thread.sleep(3000);
+        driver.quit();
         return new PlanATripPage();
     }
 
