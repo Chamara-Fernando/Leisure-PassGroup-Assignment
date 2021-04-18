@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-04-18T07:55:50.088Z",
+        "start_timestamp": "2021-04-18T20:43:59.514Z",
         "line": 4,
         "name": "As user I want to get the Explorer guidebook",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5002800,
+              "duration": 2000100,
               "status": "passed"
             },
             "line": 5,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 14627295500,
+              "duration": 22116981100,
               "status": "passed"
             },
             "line": 6,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 3586474500,
+              "duration": 3476193400,
               "status": "passed"
             },
             "line": 7,
@@ -49,7 +49,7 @@
           },
           {
             "result": {
-              "duration": 89339900,
+              "duration": 67010800,
               "status": "passed"
             },
             "line": 8,
@@ -61,7 +61,7 @@
           },
           {
             "result": {
-              "duration": 17483908200,
+              "duration": 21011793900,
               "status": "passed"
             },
             "line": 9,
