@@ -1,0 +1,95 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-18T07:55:50.088Z",
+        "line": 4,
+        "name": "As user I want to get the Explorer guidebook",
+        "description": "",
+        "id": "as-customer-who-wants-to-visit-the-attractions-in-boston-;as-user-i-want-to-get-the-explorer-guidebook",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5002800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the gocity website",
+            "match": {
+              "location": "steps.PlanATripSteps.i_am_on_the_gocity_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14627295500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on plan your trip link",
+            "match": {
+              "location": "steps.PlanATripSteps.i_click_on_plan_your_trip_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3586474500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter the first name, last name, email, travel date",
+            "match": {
+              "location": "steps.PlanATripSteps.i_enter_the_first_name_last_name_email_travel_date()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 89339900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on the privacy policy check box to agree to terms",
+            "match": {
+              "location": "steps.PlanATripSteps.i_click_on_the_privacy_policy_check_box_to_agree_to_terms()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17483908200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on the submit button",
+            "match": {
+              "location": "steps.PlanATripSteps.i_click_on_the_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "My request should be submitted",
+            "match": {
+              "location": "steps.PlanATripSteps.my_request_should_be_submitted()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "As Customer who wants to visit the attractions in Boston,",
+    "description": "         I want to get the Explorer guidebook from www.gocity.com",
+    "id": "as-customer-who-wants-to-visit-the-attractions-in-boston-",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/PlanATrip.feature",
+    "tags": []
+  }
+]

@@ -2,7 +2,7 @@ package runners;
 
 
 
-import com.cucumber.listener.Reporter;
+
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
@@ -15,17 +15,12 @@ import java.io.File;
 
 @CucumberOptions(features = {"src/test/java/features"}, glue= {
         "steps" }, monochrome = true,
-        plugin = {"pretty", "html:target/cucumber", "json:target/cucumber.json",
-                "com.cucumber.listener.ExtentCucumberFormatter:output/report.html"})
+        plugin = {"pretty", "html:target/cucumber.html", "json:target/cucumber.json"})
 
-public class MainRunner extends AbstractTestNGCucumberTests {
 
-    @AfterClass
-    public static void writeExtentReport() {
-        Reporter.loadXMLConfig(new File(System.getProperty("user.dir") +
-                "\\src\\main\\java\\utils\\ReportsConfig.xml"));
+public class MainRunner {
 
-    }
+
 
 }
 

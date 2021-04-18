@@ -23,7 +23,7 @@ public class PlanATripPage extends DriverFactory {
     public PlanATripPage enterPersonalDetails() throws InterruptedException {
         driver.findElement(By.id("edit-first-name")).sendKeys("Chamara");
         driver.findElement(By.id("edit-last-name")).sendKeys("Fernando");
-        driver.findElement(By.id("edit-email")).sendKeys("Fernando@gm.com");
+        driver.findElement(By.id("edit-email")).sendKeys("chamara778fernando@gmail.com");
         driver.findElement(By.id("edit-travel-date")).click();
         driver.findElement(By.xpath("//*[@id=\"ui-datepicker-div\"]/table/tbody/tr[5]/td[5]/a")).click();
         Thread.sleep(3000);
@@ -41,6 +41,8 @@ public class PlanATripPage extends DriverFactory {
     @Test
     public PlanATripPage clickOnSubmitButton() throws InterruptedException {
         driver.findElement(By.id("edit-actions-submit")).click();
+        Thread.sleep(5000);
+        driver.findElement(By.className("guidebook--download")).click();
         Thread.sleep(3000);
         driver.quit();
         return new PlanATripPage();
